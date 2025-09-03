@@ -1,0 +1,222 @@
+/* Barra azul superior */
+.top-bar {
+    background: #00457c;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 40px;
+  }
+  
+  /* Redes sociales */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #6ab42f;
+  }
+  
+  /* Header principal */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Logo colegio + fundación */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo-colegio {
+    height: 70px;
+  }
+  
+  .logo-fundacion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo-fundacion span {
+    font-size: 14px;
+    color: #00457c;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .logo-fundacion img {
+    height: 40px;
+  }
+  
+  /* Menú */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #00457c;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #6ab42f;
+  }
+  
+  /* Activo */
+  .nav-menu .active {
+    color: #6ab42f;
+    border-bottom: 2px solid #6ab42f;
+  }
+  
+  /* Botón Admisión */
+  .btn-admision {
+    background: #8bc34a;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 6px;
+  }
+  
+  .btn-admision:hover {
+    background: #7cb342;
+  }
+  
+  /* Dropdown */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #00457c;
+    text-decoration: none;
+  }
+  
+  .dropdown-content a:hover {
+    background: #f0f0f0;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  footer {
+    background-color: #f4f5f7;
+    border-top: 15px solid #005293; /* azul superior */
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 15px solid #83b81a;
+}
+
+/* Logo + Fundación */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.logo {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.footer-left h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #003366;
+}
+
+.footer-left h2 span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #7ac142; /* verde */
+  margin-top: 5px;
+}
+
+/* Contacto */
+.footer-right {
+  text-align: left;
+  width: 50%;
+  font-size: 14px;
+  color: #004080;
+}
+
+.footer-right a {
+  color: #0073c6;
+  text-decoration: none;
+  &:hover {
+    color: #004080;
+  }
+}
+
+.social-icons {
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #003366;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Barra inferior */
+.footer-bottom {
+  background: #004080;
+  text-align: center;
+  color: rgb(231, 231, 231);
+  font-size: 12px;
+  padding: 8px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.parrafos {
+    border-top: 3px solid #003366;
+}
+
+p{
+    padding-bottom: 2px;
+    color: #003366;
+    font-weight: bold;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+  
