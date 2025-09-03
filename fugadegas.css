@@ -1,0 +1,16 @@
+.tituloprincipal {
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.cont-titulo {
+    background: #004580;
+    height: 300px;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
