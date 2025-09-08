@@ -276,4 +276,13 @@ main img {
   height: 15%;         
   background: #ffffff;
   clip-path: ellipse(50% 100% at 50% 100%);
+  text-align: center;
+  color: #006cad;
 }
+.PISE{
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
