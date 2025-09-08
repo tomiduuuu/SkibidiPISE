@@ -3,26 +3,42 @@
 }
 
 .tituloprincipal {
+    
     text-align: center;
     font-size: 80px;
-    color: #ffffff;
+    color: #00447A;
     font-family: Arial, Helvetica, sans-serif;
+    padding: -50px;
 }
 
+.curva{
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    border-top-left-radius: 140% 60px;
+    border-top-right-radius: 170% 50px;
+}
 .cont-titulo {
-    background:#00447A;
-    height: 300px;
-    color: white;
+    position: relative;
+    background-image: url('https://i.postimg.cc/zfpG0F5f/fugadegas.jpg'); /* tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    clip-path: ellipse(100% 80% at 50% 100%);
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .procedimientos {
     text-align: center;
     font-size: 50px;
-    padding: 5px;
+    padding: 100px;
     color: #00447A;
     font-family: Arial, Helvetica, sans-serif;
 }
