@@ -6,156 +6,175 @@
 
 /* Barra azul superior */
 .top-bar {
-    background: #00457c;
-    height: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 40px;
-  }
-  
-  /* Redes sociales */
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    color: white;
-    font-size: 16px;
-    transition: 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #6ab42f;
-  }
-  
-  /* Header principal */
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 50px;
-    background: white;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Logo colegio + fundación */
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .logo-colegio {
-    height: 70px;
-  }
-  
-  .logo-fundacion {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .logo-fundacion span {
-    font-size: 14px;
-    color: #00457c;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  
-  .logo-fundacion img {
-    height: 40px;
-  }
-  
-  /* Menú */
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .nav-menu a {
-    text-decoration: none;
-    color: #00457c;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .nav-menu a:hover {
-    color: #6ab42f;
-  }
-  
-  /* Activo */
-  .nav-menu .active {
-    color: #6ab42f;
-    border-bottom: 2px solid #6ab42f;
-  }
-  
-  /* Botón Admisión */
-  .btn-admision {
-    background: #8bc34a;
-    color: white !important;
-    padding: 8px 15px;
-    border-radius: 6px;
-  }
-  
-  .btn-admision:hover {
-    background: #7cb342;
-  }
-  
-  /* Dropdown */
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    background: white;
-    border: 1px solid #ccc;
-    min-width: 150px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-    z-index: 1000;
-  }
-  
-  .dropdown-content a {
-    display: block;
-    padding: 10px;
-    color: #00457c;
-    text-decoration: none;
-  }
-  
-  .dropdown-content a:hover {
-    background: #f0f0f0;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  footer {
-    background-color: #f4f5f7;
-    border-top: 15px solid #005293; /* azul superior */
+  background: #00457c;
+  height: 54px; /* 90% de 60px */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 36px; /* 90% del padding original */
 }
 
+/* Redes sociales */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #00457c;
+  font-size: 18px; /* un poco más grande */
+  background: white; /* fondo blanco */
+  padding: 8px;      /* espacio alrededor del icono */
+  border-radius: 50%; /* redondo */
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6ab42f;
+  background: #ffffffcc; /* efecto hover más suave */
+}
+
+/* Header principal */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22.5px 45px; /* 90% de 25px 50px */
+  background: white;
+  font-family: Arial, sans-serif;
+}
+header,
+.top-bar,
+.header-container,
+.logo-colegio,
+.nav-menu a,
+.btn-admision {
+  transition: all 0.3s ease;
+}
+
+/* Estado reducido del header */
+header.shrink .top-bar {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+header.shrink .header-container {
+  padding: 15px 45px; /* menos padding */
+}
+
+header.shrink .logo-colegio {
+  height: 70px; /* logo más pequeño */
+}
+
+header.shrink .nav-menu a {
+  font-size: 14px; /* menú más pequeño */
+}
+
+header.shrink .btn-admision {
+  padding: 8px 15px;
+  font-size: 12px;
+}
 header {
-    z-index: 999;
-    position: fixed;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;       /* asegura que quede por encima de la imagen */
+}
+
+body {
+  padding-top: 162px;  /* ajusta según la altura total del header aumentado */
+}
+
+/* Logo colegio */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-colegio {
+  height: 90px; 
+}
+
+/* Menú */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 22.5px; 
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #00457c;
+  font-weight: bold;
+  font-size: 16.2px; /* aumentado */
+  transition: 0.3s;
+}
+
+/* Activo */
+.nav-menu .active {
+  color: #6ab42f;
+  border-bottom: 2px solid #6ab42f;
+}
+
+/* Botón Admisión */
+.btn-admision {
+  background: #8bc34a;
+  color: white !important;
+  padding: 10.8px 18px; /* aumentado */
+  border-radius: 6px;
+  font-size: 14.4px; /* más visible */
+}
+
+.btn-admision:hover {
+  background: #7cb342;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px; /* ajustado por altura mayor del header */
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #00457c;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #eeeeee;
 }
 
 .contenedor-titulo {
     z-index: 10;
     width: 100%;
-    height: 85vh;
+    height: 70vh;
     img {
         z-index: -1;
         position: absolute;
@@ -166,40 +185,82 @@ header {
     }
 }
 
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .titulo-principal {
-    font-size: 80px;
-    color: white;
-    z-index: 999;
+  font-size: 80px;
+  color: white;
+  z-index: 998;
+  position: absolute;
+}
+
+.titulo-video {
+  font-size: 2em;
+  color:#004080;
+  z-index: 999;
 }
 
 .curva {
-    position: absolute;
-    bottom: 10vh;
-    left: 0;
-    width: 100%;
-    height: 15%;         
-    background: #ffffff;
-    clip-path: ellipse(60% 100% at 50% 100%);
+  z-index: 20;
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  margin-top: 0;
+  width: 100%;
+  height: 15%;         
+  background: #eeeeee;
+  clip-path: ellipse(60% 100% at 50% 100%);
 }
 
 .video-yt {
-    background: #ffffff;
-    height: 300px;
-    color: rgb(136, 136, 136);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 5vh;
+  z-index: 999;
+  background: #eeeeee;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .borde {
+    border-top: 2px solid #003366;
+    padding-bottom: 5vh;
+    width: 100px;
+    z-index: 999;
+  }
+}
 
+.contenedor-columnas {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
 }
 
 .contenido-yt {
-    margin-top: 200px;
-    text-align: center;
-    margin-bottom: 200px;
+  width: 30%;
+  text-align: center;
+  margin-top: 5vh;
+  p {
+    color: rgb(136, 136, 136);
+    padding: 2em;
+  }   
 }
 
-
-
+.resumen-seccion {
+  width: 30%;
+  text-align: center;
+  p {
+    font-weight: 100;
+    color: #004080;
+    font-size: 1.5em;
+  }
+  
+}
 
 
 
@@ -210,6 +271,7 @@ header {
   align-items: center;
   padding: 20px 40px;
   border-top: 15px solid #83b81a;
+  margin-top: 50vh;
 }
 
 /* Logo + Fundación */
