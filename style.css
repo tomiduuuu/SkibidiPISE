@@ -1,14 +1,41 @@
-/* Barra azul superior */
+/* --- ESTILOS GENERALES --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+}
+
+/* Espacio superior para compensar el header fijo */
+body {
+  padding-top: 162px; /* Revertido al valor que parecía funcionar mejor */
+}
+
+
+/* --- ESTILOS DEL HEADER --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+  transition: all 0.3s ease;
+}
+
 .top-bar {
   background: #00457c;
-  height: 54px; /* 90% de 60px */
+  height: 54px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 36px; /* 90% del padding original */
+  padding: 0 36px;
+  transition: all 0.3s ease;
 }
 
-/* Redes sociales */
 .social-icons {
   display: flex;
   gap: 15px;
@@ -16,72 +43,26 @@
 
 .social-icons a {
   color: #00457c;
-  font-size: 18px; /* un poco más grande */
-  background: white; /* fondo blanco */
-  padding: 8px;      /* espacio alrededor del icono */
-  border-radius: 50%; /* redondo */
+  font-size: 18px;
+  background: white;
+  padding: 8px;
+  border-radius: 50%;
   transition: 0.3s;
 }
 
 .social-icons a:hover {
   color: #6ab42f;
-  background: #ffffffcc; /* efecto hover más suave */
 }
 
-/* Header principal */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22.5px 45px; /* 90% de 25px 50px */
-  background: white;
+  padding: 22.5px 45px;
   font-family: Arial, sans-serif;
-}
-header,
-.top-bar,
-.header-container,
-.logo-colegio,
-.nav-menu a,
-.btn-admision {
   transition: all 0.3s ease;
 }
 
-/* Estado reducido del header */
-header.shrink .top-bar {
-  height: 0;
-  padding: 0;
-  opacity: 0;
-}
-
-header.shrink .header-container {
-  padding: 15px 45px; /* menos padding */
-}
-
-header.shrink .logo-colegio {
-  height: 70px; /* logo más pequeño */
-}
-
-header.shrink .nav-menu a {
-  font-size: 14px; /* menú más pequeño */
-}
-
-header.shrink .btn-admision {
-  padding: 8px 15px;
-  font-size: 12px;
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;       /* asegura que quede por encima de la imagen */
-}
-
-body {
-  padding-top: 162px;  /* ajusta según la altura total del header aumentado */
-}
-
-/* Logo colegio */
 .logo {
   display: flex;
   align-items: center;
@@ -89,44 +70,41 @@ body {
 }
 
 .logo-colegio {
-  height: 90px; 
+  height: 90px;
+  transition: all 0.3s ease;
 }
 
-/* Menú */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22.5px; 
+  gap: 22.5px;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #00457c;
   font-weight: bold;
-  font-size: 16.2px; /* aumentado */
+  font-size: 16.2px;
   transition: 0.3s;
 }
 
-/* Activo */
 .nav-menu .active {
   color: #6ab42f;
   border-bottom: 2px solid #6ab42f;
 }
 
-/* Botón Admisión */
 .btn-admision {
   background: #8bc34a;
   color: white !important;
-  padding: 10.8px 18px; /* aumentado */
+  padding: 10.8px 18px;
   border-radius: 6px;
-  font-size: 14.4px; /* más visible */
+  font-size: 14.4px;
 }
 
 .btn-admision:hover {
   background: #7cb342;
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -134,7 +112,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 45px; /* ajustado por altura mayor del header */
+  top: 45px;
   left: 0;
   background: white;
   border: 1px solid #ccc;
@@ -158,13 +136,221 @@ body {
   display: block;
 }
 
-/* ---------------- FOOTER ---------------- */
-footer {
-  background-color: #f4f5f7;
-  border-top: 15px solid #005293; /* azul superior */
+/* Efecto shrink para el header al hacer scroll */
+header.shrink .top-bar {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+header.shrink .header-container {
+  padding: 10px 45px;
+}
+header.shrink .logo-colegio {
+  height: 60px;
+}
+header.shrink .nav-menu a {
+  font-size: 15px;
+}
+header.shrink .btn-admision {
+  padding: 8px 15px;
+  font-size: 13px;
 }
 
-/* Contenedor principal del footer */
+
+/* --- SECCIÓN 1: BANNER PISE --- */
+.banner-pise {
+  height: 550px; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://image.bard.google.com/image?id=8091809071066060199'); /* ¡URL corregida y en el lugar correcto! */
+  background-size: cover;
+  background-position: center 30%;
+  background-attachment: fixed;
+}
+.banner-pise::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+.banner-content h1 {
+  font-size: 4.5rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.banner-content h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.curva {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  border-top-left-radius: 100% 80px;
+  border-top-right-radius: 100% 80px;
+}
+
+
+/* --- SECCIÓN 2: CONTENIDO PRINCIPAL --- */
+.contenido-principal {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.contenido-principal h2 {
+  text-align: center;
+  color: #00457c; 
+  font-size: 2rem;
+  margin-bottom: 25px; 
+}
+
+.Contexto {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+
+
+/* === SECCIÓN DE IDENTIFICACIÓN DE EMERGENCIAS (MODIFICADA CON OVERLAY) === */
+.emergencias-pise {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.emergencias-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.emergencias-pise h2 {
+  color: #00457c;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+}
+
+.emergencias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.emergencia-item {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* NUEVOS ESTILOS */
+  position: relative; /* Clave para el overlay */
+  overflow: hidden;   /* Clave para el overlay */
+  padding: 0;         /* El padding ahora va en el contenido interno */
+}
+
+/* El hover ahora lo controla el enlace interno */
+.emergencia-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.emergencia-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.emergencia-content {
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.emergencia-content i {
+  font-size: 3.5rem;
+  color: #6ab42f;
+  margin-bottom: 20px;
+}
+
+.emergencia-content h3 {
+  font-size: 1.3rem;
+  color: #00457c;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.emergencia-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: auto;
+}
+
+.emergencia-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 69, 124, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0; /* Oculto por defecto */
+  transform: scale(0.8); /* Empieza pequeño */
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 5;
+}
+
+.emergencia-link:hover .emergencia-overlay {
+  opacity: 1; /* Aparece */
+  transform: scale(1); /* Crece a su tamaño normal */
+}
+
+.emergencia-link:hover .emergencia-content {
+  opacity: 0.2; /* El contenido de fondo se desvanece */
+  transform: scale(0.95); /* Se encoge un poco */
+}
+
+
+/* --- ESTILOS DEL FOOTER --- */
+footer {
+  background-color: #f4f5f7;
+  border-top: 15px solid #005293;
+}
+
 .footer-container {
   display: flex;
   align-items: center;
@@ -172,7 +358,6 @@ footer {
   border-top: 15px solid #83b81a;
 }
 
-/* Logo + Fundación */
 .footer-left {
   display: flex;
   align-items: center;
@@ -185,21 +370,6 @@ footer {
   border-radius: 50%;
 }
 
-.footer-left h2 {
-  font-size: 18px;
-  margin: 0;
-  color: #003366;
-}
-
-.footer-left h2 span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: #7ac142; /* verde */
-  margin-top: 5px;
-}
-
-/* Contacto */
 .footer-right {
   text-align: left;
   width: 50%;
@@ -210,10 +380,6 @@ footer {
 .footer-right a {
   color: #0073c6;
   text-decoration: none;
-}
-
-.footer-right a:hover {
-  color: #004080;
 }
 
 .footer-right .social-icons {
@@ -227,7 +393,6 @@ footer {
   font-size: 18px;
 }
 
-/* Barra inferior */
 .footer-bottom {
   background: #004080;
   text-align: center;
@@ -240,49 +405,69 @@ footer {
   border-top: 3px solid #003366;
 }
 
-p {
+footer p {
   padding-bottom: 2px;
   color: #003366;
   font-weight: bold;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+
+/* --- DISEÑO RESPONSIVO --- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  body {
+    padding-top: 220px;
+  }
+  
+  header.shrink {
+    padding-top: 0;
+  }
+
+  .banner-pise {
+    height: 350px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  
+  .banner-content h2 {
+    font-size: 1rem;
+  }
+  
+  .Contexto {
+    font-size: 1.2rem;
+  }
+
+  .emergencias-pise h2 {
+    font-size: 1.8rem;
+  }
+  .emergencias-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+  }
 }
-
-main {
-  flex: 1;
-  position: relative;   /* importante para que el img y curva se acomoden dentro */
-  overflow: hidden;     /* recorta lo que sobresalga */
-}
-
-/* Imagen principal tipo banner */
-main img {
-  width: 100%;
-  height: 1100px;        /* alto fijo del banner */
-  object-fit: cover;    /* recorta sin deformar */
-  display: block;
-}
-
-/* Curva que corta la parte inferior */
-.curva {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 15%;         
-  background: #ffffff;
-  clip-path: ellipse(50% 100% at 50% 100%);
-  text-align: center;
-  color: #006cad;
-}
-.PISE{
-  text-align: center;
-  font-size: 18px;
-}
-
-
-
