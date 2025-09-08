@@ -160,14 +160,15 @@ header.shrink .btn-admision {
 
 /* --- SECCIÓN 1: BANNER PISE --- */
 .banner-pise {
-  height: 550px; 
+  height: 650px; 
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('https://image.bard.google.com/image?id=8091809071066060199'); /* ¡URL corregida y en el lugar correcto! */
+  background-image: url(Imagenes/ImagenGemini.png); /* ¡URL corregida y en el lugar correcto! */
   background-size: cover;
-  background-position: center 30%;
+  background-position: center; /* Cambiado a 'center' para una mejor adaptacion */
+  background-repeat: no-repeat; /* Aseguramos que la imagen no se repita */
   background-attachment: fixed;
 }
 .banner-pise::before {
@@ -177,7 +178,7 @@ header.shrink .btn-admision {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.35); /* Un poco más claro */
 }
 
 .banner-content {
