@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+  background-color: #eeeeee;
+}
+
 /* Barra azul superior */
 .top-bar {
   background: #00457c;
@@ -164,11 +168,14 @@ body {
   display: block;
 }
 
+/* ------------ Contenido Principal ----------- */
+
+/* Imagen y titulo */
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eeeeee;
+  
 }
 
 .contenedor-titulo {
@@ -199,7 +206,9 @@ body {
   position: absolute;
 }
 
-.titulo-video {
+/* Sección video de youtube */
+
+.titulo-seccion {
   font-size: 2em;
   color:#004080;
   z-index: 999;
@@ -219,18 +228,20 @@ body {
 
 .video-yt {
   padding-top: 5vh;
+  margin-bottom: 5vh;
   z-index: 999;
   background: #eeeeee;
   height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .borde {
-    border-top: 2px solid #003366;
-    padding-bottom: 5vh;
-    width: 100px;
-    z-index: 999;
-  }
+}
+
+.borde {
+  border-top: 2px solid #003366;
+  padding-bottom: 5vh;
+  width: 100px;
+  z-index: 999;
 }
 
 .contenedor-columnas {
@@ -251,6 +262,8 @@ body {
   }   
 }
 
+/* Texto sección video */
+
 .resumen-seccion {
   width: 30%;
   text-align: center;
@@ -262,7 +275,30 @@ body {
   
 }
 
+/* Sección Pasos */
 
+.seccion-pasos {
+  padding-top: 24em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contenedor-pasos {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10em;
+  place-items: center;
+}
+
+.paso {
+  width: 35em;
+  height: 25em;
+  background-color: white;
+  box-shadow: 1px 1px 10px gray;
+}
 
 /* Footer */
 
@@ -271,7 +307,7 @@ body {
   align-items: center;
   padding: 20px 40px;
   border-top: 15px solid #83b81a;
-  margin-top: 50vh;
+  margin-top: 25vh;
 }
 
 /* Logo + Fundación */
