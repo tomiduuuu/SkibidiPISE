@@ -160,14 +160,15 @@ header.shrink .btn-admision {
 
 /* --- SECCIÓN 1: BANNER PISE --- */
 .banner-pise {
-  height: 650px; 
+  height: 710px; 
+  content: center;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(Imagenes/ImagenGemini.png); /* ¡URL corregida y en el lugar correcto! */
+  background-image: url(Imagenes/ImagenPISE.png); /* ¡URL corregida y en el lugar correcto! */
   background-size: cover;
-  background-position: center; /* Cambiado a 'center' para una mejor adaptacion */
+  background-position: left center; /* Cambiado a 'center' para una mejor adaptacion */
   background-repeat: no-repeat; /* Aseguramos que la imagen no se repita */
   background-attachment: fixed;
 }
