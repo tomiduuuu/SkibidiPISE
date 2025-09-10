@@ -132,10 +132,10 @@ header {
   background: #f0f0f0;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
   display: block;
 }
-
 /* Efecto shrink para el header al hacer scroll */
 header.shrink .top-bar {
   height: 0;

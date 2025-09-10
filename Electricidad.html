@@ -38,8 +38,20 @@
         <div class="dropdown">
           <a href="#">Especialidades ▾</a>
           <div class="dropdown-content">
+            <a href="#">Administracion Mencion Recursos Humanos</a>
+            <a href="#">Administracion Mencion Logistica</a>
             <a href="#">Programacion</a>
             <a href="#">Contabilidad</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#">PISE ▾</a>
+          <div class="dropdown-content">
+            <a href="electricidad.html">Riesgo Eléctrico</a>
+            <a href="incendios.html">Incendios</a>
+            <a href="sismo-tsunami.html">Sismo y Tsunami</a>
+            <a href="accidentes-graves.html">Accidentes Graves</a>
+            <a href="paro-cardiorrespiratorio.html">Uso de Desfibrilador</a>
           </div>
         </div>
         <a href="#" class="btn-admision">Admisión</a>
@@ -156,6 +168,39 @@
       } else {
         header.classList.remove('shrink');
       }
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      const dropdowns = document.querySelectorAll('.nav-menu .dropdown');
+  
+      if (dropdowns.length === 0) {
+        return;
+      }
+  
+      dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector('a'); 
+  
+        trigger.addEventListener('click', function (event) {
+          event.preventDefault();
+          event.stopPropagation(); 
+  
+          const isAlreadyActive = dropdown.classList.contains('active');
+  
+          dropdowns.forEach(d => d.classList.remove('active'));
+  
+          if (!isAlreadyActive) {
+            dropdown.classList.add('active');
+          }
+        });
+      });
+  
+      window.addEventListener('click', function () {
+        dropdowns.forEach(dropdown => {
+          dropdown.classList.remove('active');
+        });
+      });
     });
   </script>
 </body>
