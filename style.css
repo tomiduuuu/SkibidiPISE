@@ -42,18 +42,18 @@ header {
 }
 
 .social-icons a {
-  color: #00457c;
+  color: #00457c; /* Color del icono por defecto (azul oscuro) */
   font-size: 18px;
-  background: white;
+  background: white; /* Fondo del círculo por defecto (blanco) */
   padding: 8px;
   border-radius: 50%;
   transition: 0.3s;
 }
 
 .social-icons a:hover {
-  color: #6ab42f;
+  background: #6ab42f; /* El fondo del círculo se pone verde */
+  color: white; /* El icono se pone blanco para contrastar */
 }
-
 .header-container {
   display: flex;
   align-items: center;
