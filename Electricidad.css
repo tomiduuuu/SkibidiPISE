@@ -1,17 +1,18 @@
-/* --- ESTILOS PARA LA PÁGINA DE RIESGO ELÉCTRICO --- */
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE RIESGO ELÉCTRICO --- */
 
-/* --- Banner Específico --- */
-.banner-electricidad {
-    /* Puedes usar una imagen de fondo relacionada con la electricidad */
-    background-image: url('https://images.unsplash.com/photo-1581092921462-699702a4a79b?q=80&w=2070&auto=format&fit=crop');
-    background-position: center;
-}
-
-/* --- Contenedor General de Contenido --- */
+/* --- Contenedor General de Contenido para esta página --- */
 .contenido-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* --- Banner Específico --- */
+.banner-electricidad {
+    background-image: url('https://www.experta.com.ar/blogg/wp-content/uploads/sites/2/2024/11/ACCIDENTES-EL%C3%89CTRICOS-EN-EL-HOGAR.jpg');
+    background-size: cover;
+    background-position: center center; /* <-- Asegúrate de que esté así */
+    /* ... el resto de tus propiedades ... */
 }
 
 /* --- Sección 1: Protocolo de Pasos --- */
@@ -29,7 +30,6 @@
 
 .pasos-grid {
     display: grid;
-    /* Cambiamos la configuración para que siempre intente crear 2 columnas */
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
@@ -78,7 +78,7 @@
 /* --- Sección 2: Prevención --- */
 .prevencion {
     padding: 80px 0;
-    background-color: #f8f9fa; /* Fondo suave para diferenciar */
+    background-color: #f8f9fa;
 }
 
 .prevencion h2 {
@@ -93,6 +93,9 @@
     font-size: 1.2rem;
     color: #555;
     margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .lista-prevencion {
@@ -106,7 +109,7 @@
 }
 
 .lista-prevencion h3 {
-    color: #c82333; /* Color rojo para la advertencia */
+    color: #c82333; /* Rojo para la advertencia */
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
@@ -125,11 +128,14 @@
     color: #333;
     margin-bottom: 15px;
     line-height: 1.7;
+    display: flex;
+    align-items: flex-start;
 }
 
 .lista-prevencion ul li i {
-    color: #f0ad4e; /* Color amarillo para el ícono de exclamación */
+    color: #f0ad4e; /* Amarillo para el ícono de exclamación */
     margin-right: 15px;
+    margin-top: 4px;
 }
 
 
@@ -157,33 +163,4 @@
     border: 1px solid #6ab42f;
     border-radius: 10px;
     padding: 30px;
-    color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-.contacto-card:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.contacto-card h3 {
-    font-size: 1.6rem;
-    color: #6ab42f;
-    margin-bottom: 15px;
-}
-
-.contacto-card p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #f1f1f1;
-}
-
-/* --- Media Queries para Responsividad --- */
-@media (max-width: 768px) {
-    .contacto-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .protocolo-pasos h2, .prevencion h2, .tipos-contacto h2 {
-        font-size: 2rem;
-    }
 }

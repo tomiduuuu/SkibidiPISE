@@ -1,0 +1,229 @@
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE ACCIDENTES --- */
+
+/* --- Contenedor General --- */
+.contenido-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Banner Específico --- */
+.banner-accidentes {
+    background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop');
+    background-position: center 60%;
+}
+
+/* --- Sección de Prevención de Accidentes --- */
+.seccion-prevencion-accidentes {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.seccion-prevencion-accidentes h2,
+.procedimientos-accidentes h2 {
+    text-align: center;
+    color: #00457c;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subtitulo-prevencion {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prevencion-accidentes-box {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-top: 5px solid #6ab42f;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.columna-prevencion h3 {
+    color: #00457c;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.columna-prevencion h3 i {
+    margin-right: 15px;
+    color: #6ab42f;
+}
+
+.columna-prevencion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.columna-prevencion ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+}
+
+.columna-prevencion ul li i {
+    color: #28a745;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+/* --- Sección de Procedimientos por Gravedad --- */
+.procedimientos-accidentes {
+    padding: 80px 20px;
+    background-color: #f8f9fa; 
+}
+
+.tipo-accidente-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin: 0 auto 30px auto;
+    max-width: 900px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 7px solid;
+}
+
+.tipo-accidente-card.leve { border-color: #28a745; }
+.tipo-accidente-card.medio-grave { border-color: #ffc107; }
+.tipo-accidente-card.grave { border-color: #dc3545; }
+
+.tipo-accidente-card h3 {
+    font-size: 1.8rem;
+    color: #00457c;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.tipo-accidente-card h3 i {
+    margin-right: 15px;
+    font-size: 1.6rem;
+}
+
+.tipo-accidente-card.leve h3 i { color: #28a745; }
+.tipo-accidente-card.medio-grave h3 i { color: #ffc107; }
+.tipo-accidente-card.grave h3 i { color: #dc3545; }
+
+.lista-pasos {
+    list-style: none;
+    padding-left: 0;
+    counter-reset: pasos-counter; 
+}
+
+.lista-pasos li {
+    position: relative;
+    padding-left: 50px; 
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.lista-pasos li::before {
+    counter-increment: pasos-counter; 
+    content: counter(pasos-counter); 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #00457c;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.tipo-accidente-card.leve .lista-pasos li::before { background-color: #28a745; }
+.tipo-accidente-card.medio-grave .lista-pasos li::before { background-color: #ffc107; color: #333; }
+.tipo-accidente-card.grave .lista-pasos li::before { background-color: #dc3545; }
+
+/* --- Sección "Primeros Auxilios para Casos Comunes" --- */
+.tipos-de-accidente-seccion {
+    padding: 80px 20px;
+    background-color: #00457c; 
+}
+
+.tipos-de-accidente-seccion h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.accidentes-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.accidente-info-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6ab42f;
+    border-radius: 10px;
+    padding: 30px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.accidente-info-card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.accidente-info-card h3 {
+    font-size: 1.6rem;
+    color: #6ab42f;
+    margin-bottom: 15px;
+}
+
+.accidente-info-card p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f1f1f1;
+}
+
+/* --- Media Queries para Responsividad --- */
+@media (max-width: 768px) {
+    .seccion-prevencion-accidentes h2,
+    .procedimientos-accidentes h2,
+    .tipos-de-accidente-seccion h2 {
+        font-size: 2rem;
+    }
+    
+    .prevencion-accidentes-box {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .lista-pasos li {
+        font-size: 1rem;
+        padding-left: 45px;
+    }
+    .lista-pasos li::before {
+        width: 30px;
+        height: 30px;
+    }
+
+    .accidentes-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
