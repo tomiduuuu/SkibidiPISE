@@ -38,18 +38,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let currentIndex = 0;
 const slider = document.getElementById("slider");
+const cardWidth = document.querySelector(".paso").offsetWidth;
 const totalCards = 10;
 
 function nextCard() {
     if (currentIndex < totalCards - 1) {
         currentIndex++;
-        slider.style.transform = `translateX(-${currentIndex * 300}px)`;
+        slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
 }
 
 function prevCard() {
   if (currentIndex > 0) {
     currentIndex--;
-    slider.style.transform = `translateX(-${currentIndex * 300}px)`;
+    slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
   }
 }
