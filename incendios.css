@@ -273,7 +273,7 @@ main {
   p {
     font-weight: 100;
     color: #004080;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   
 }
@@ -281,7 +281,7 @@ main {
 /* Sección Pasos */
 
 .seccion-pasos {
-  padding-top: 24em;
+  padding-top: 20em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,12 +289,13 @@ main {
 }
 
 .contenedor-pasos {
-  width: 30vw;
-  height: 200px;
+  width: 80vw;
+  height: 500px;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   background: white;
+  margin: 4em 0;
 }
 
 .slider {
@@ -305,19 +306,21 @@ main {
 }
 
 .paso {
-  min-width: 30vw;
-  height: 200px;
+  width: 80vw;
+  height: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  padding: 2em;
 }
 
+/* COLORES DE FONDO TARJETAS
 .paso:nth-child(1) { background: #e74c3c; }
 .paso:nth-child(2) { background: #3498db; }
 .paso:nth-child(3) { background: #2ecc71; }
@@ -328,12 +331,13 @@ main {
 .paso:nth-child(8) { background: #34495e; }
 .paso:nth-child(9) { background: #c0392b; }
 .paso:nth-child(10){ background: #7f8c8d; }
+*/
 
 button {
   
   bottom: 10px;
   right: 10px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(134, 134, 134, 0.8);
   border: none;
   padding: 8px 12px;
   border-radius: 8px;
@@ -342,7 +346,7 @@ button {
   }
 
 button:hover {
-  background: white;
+  background: rgb(219, 219, 219);
   }
 
   button:nth-of-type(1) {
@@ -359,6 +363,43 @@ button:nth-of-type(2) {
   justify-content: space-between;
   align-items: flex-end;
   gap: 5vw;
+  padding-top: 1em;
+}
+
+/* Persnalización por tarjeta */
+
+.columna-img {
+  width: 50%;
+  height: 90%;
+  background-color: #eeeeee;
+  align-self: center;
+  img {
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+.columna-texto {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-weight: 100;
+    color: #004080;
+    font-size: 1em;
+    width: 70%;
+    text-align: center;
+  }
+}
+
+h2 {
+  padding-bottom: 1em;
+  font-size: 1.6em;
+  color:#004080;
+
 }
 
 /* Footer */
@@ -368,7 +409,7 @@ button:nth-of-type(2) {
   align-items: center;
   padding: 20px 40px;
   border-top: 15px solid #83b81a;
-  margin-top: 25vh;
+  
 }
 
 /* Logo + Fundación */

@@ -38,16 +38,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let currentIndex = 0;
 const slider = document.getElementById("slider");
-const cardWidth = document.querySelector(".paso").offsetWidth;
-const totalCards = 10;
+const cards = document.querySelectorAll(".paso");
+let cardWidth = cards[0].offsetWidth;
+const totalCards = cards.length;
 
+// El ancho de la tarjeta se ajusta al tamaño de la ventana
+function updateCardWidth() {
+  cardWidth = cards[0].offsetWidth;
+  slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+}
+
+window.addEventListener("resize", updateCardWidth);
+
+// Código del botón "avanzar"
 function nextCard() {
     if (currentIndex < totalCards - 1) {
         currentIndex++;
         slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
+    
 }
 
+// Código del botón "atrás"
 function prevCard() {
   if (currentIndex > 0) {
     currentIndex--;
