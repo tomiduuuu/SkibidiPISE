@@ -1,0 +1,381 @@
+/* --- ESTILOS DEL HEADER --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.top-bar {
+  background: #00457c;
+  height: 54px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 36px;
+  transition: all 0.3s ease;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #00457c; /* Color del icono por defecto (azul oscuro) */
+  font-size: 18px;
+  background: white; /* Fondo del círculo por defecto (blanco) */
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #6ab42f; /* El fondo del círculo se pone verde */
+  color: white; /* El icono se pone blanco para contrastar */
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22.5px 45px;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-colegio {
+  height: 90px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 22.5px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #00457c;
+  font-weight: bold;
+  font-size: 16.2px;
+  transition: 0.3s;
+}
+
+.nav-menu .active {
+  color: #6ab42f;
+  border-bottom: 2px solid #6ab42f;
+}
+
+.btn-admision {
+  background: #8bc34a;
+  color: white !important;
+  padding: 10.8px 18px;
+  border-radius: 6px;
+  font-size: 14.4px;
+}
+
+.btn-admision:hover {
+  background: #7cb342;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #00457c;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+  display: block;
+}
+/* Efecto shrink para el header al hacer scroll */
+header.shrink .top-bar {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+header.shrink .header-container {
+  padding: 10px 45px;
+}
+header.shrink .logo-colegio {
+  height: 60px;
+}
+header.shrink .nav-menu a {
+  font-size: 15px;
+}
+header.shrink .btn-admision {
+  padding: 8px 15px;
+  font-size: 13px;
+}
+
+
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA Sismosy Tsunami --- */
+
+/* --- Contenedor General de Contenido para esta página --- */
+.contenido-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Banner Específico --- */
+.banner-fuga {
+    background-image: url('https://i.postimg.cc/yNKXcb4X/Terremoto-de-2010.jpg');
+    background-size: cover;
+    background-position: center center; /* <-- Asegúrate de que esté así */
+    /* ... el resto de tus propiedades ... */
+}
+
+/* --- Sección 1: Protocolo de Pasos --- */
+.protocolo-pasos {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.protocolo-pasos h2 {
+    text-align: center;
+    color: #00457c;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.pasos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.paso {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    border-top: 5px solid #00457c;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paso:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.paso-icono {
+    background-color: #00457c;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.paso h3 {
+    color: #00457c;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.paso p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* --- Sección 2: Prevención --- */
+.prevencion {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.prevencion h2 {
+    text-align: center;
+    color: #00457c;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subtitulo-prevencion {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista-prevencion {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 5px solid #6ab42f;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.lista-prevencion h3 {
+    color: #c82333; /* Rojo para la advertencia */
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.lista-prevencion h3 i {
+    margin-right: 10px;
+}
+
+.lista-prevencion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-prevencion ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lista-prevencion ul li i {
+    color: #f0ad4e; /* Amarillo para el ícono de exclamación */
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+
+/* --- Sección 3: Video Fuga de Gas --- */
+.contenedor {
+  text-align: center; /* Centra el texto y el video */
+  background-color: #00457c;
+}
+
+.contenedor h2 {
+  padding-top: 25px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.video-card {
+  max-width: 600px;
+  width: 100%;
+  padding: 25px;
+}
+
+.video-card iframe,
+.video-card video {
+  width: 100%; /* Que se ajuste al ancho del card */
+  
+  border-radius: 10px;
+}
+
+/* --- ESTILOS DEL FOOTER --- */
+
+footer {
+  background-color: #f4f5f7;
+  border-top: 15px solid #005293;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  border-top: 15px solid #83b81a;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+}
+
+.footer-left .logo {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.footer-right {
+  text-align: left;
+  width: 50%;
+  font-size: 14px;
+  color: #004080;
+}
+
+.footer-right a {
+  color: #0073c6;
+  text-decoration: none;
+}
+
+.footer-right .social-icons {
+  margin-bottom: 8px;
+}
+
+.footer-right .social-icons a {
+  margin-right: 10px;
+  color: #003366;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer-bottom {
+  background: #004080;
+  text-align: center;
+  color: rgb(231, 231, 231);
+  font-size: 12px;
+  padding: 15px 8px;
+}
+
+.parrafos {
+  border-top: 3px solid #003366;
+}
+
+footer p {
+  padding-bottom: 2px;
+  color: #003366;
+  font-weight: bold;
+}
