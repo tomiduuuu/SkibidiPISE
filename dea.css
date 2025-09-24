@@ -170,6 +170,14 @@ body {
 
 /* ------------ Contenido Principal ----------- */
 
+/* --- Banner Específico --- */
+.banner-dea {
+    background-image: url('https://i.ibb.co/Z1krq4g4/dea.png') !important;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
 /* Imagen y titulo */
 main {
   display: flex;
