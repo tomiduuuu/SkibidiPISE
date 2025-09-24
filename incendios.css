@@ -8,90 +8,54 @@ body {
   background-color: #eeeeee;
 }
 
-/* Barra azul superior */
+/* --- ESTILOS DEL HEADER --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+  transition: all 0.3s ease;
+}
+
 .top-bar {
   background: #00457c;
-  height: 54px; /* 90% de 60px */
+  height: 54px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 36px; /* 90% del padding original */
+  padding: 0 36px;
+  transition: all 0.3s ease;
 }
 
-/* Redes sociales */
 .social-icons {
   display: flex;
   gap: 15px;
 }
 
 .social-icons a {
-  color: #00457c;
-  font-size: 18px; /* un poco más grande */
-  background: white; /* fondo blanco */
-  padding: 8px;      /* espacio alrededor del icono */
-  border-radius: 50%; /* redondo */
+  color: #00457c; /* Color del icono por defecto (azul oscuro) */
+  font-size: 18px;
+  background: white; /* Fondo del círculo por defecto (blanco) */
+  padding: 8px;
+  border-radius: 50%;
   transition: 0.3s;
 }
 
 .social-icons a:hover {
-  color: #6ab42f;
-  background: #ffffffcc; /* efecto hover más suave */
+  background: #6ab42f; /* El fondo del círculo se pone verde */
+  color: white; /* El icono se pone blanco para contrastar */
 }
-
-/* Header principal */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22.5px 45px; /* 90% de 25px 50px */
-  background: white;
+  padding: 22.5px 45px;
   font-family: Arial, sans-serif;
-}
-header,
-.top-bar,
-.header-container,
-.logo-colegio,
-.nav-menu a,
-.btn-admision {
   transition: all 0.3s ease;
 }
 
-/* Estado reducido del header */
-header.shrink .top-bar {
-  height: 0;
-  padding: 0;
-  opacity: 0;
-}
-
-header.shrink .header-container {
-  padding: 15px 45px; /* menos padding */
-}
-
-header.shrink .logo-colegio {
-  height: 70px; /* logo más pequeño */
-}
-
-header.shrink .nav-menu a {
-  font-size: 14px; /* menú más pequeño */
-}
-
-header.shrink .btn-admision {
-  padding: 8px 15px;
-  font-size: 12px;
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;       /* asegura que quede por encima de la imagen */
-}
-
-body {
-  padding-top: 162px;  /* ajusta según la altura total del header aumentado */
-}
-
-/* Logo colegio */
 .logo {
   display: flex;
   align-items: center;
@@ -99,44 +63,41 @@ body {
 }
 
 .logo-colegio {
-  height: 90px; 
+  height: 90px;
+  transition: all 0.3s ease;
 }
 
-/* Menú */
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 22.5px; 
+  gap: 22.5px;
 }
 
 .nav-menu a {
   text-decoration: none;
   color: #00457c;
   font-weight: bold;
-  font-size: 16.2px; /* aumentado */
+  font-size: 16.2px;
   transition: 0.3s;
 }
 
-/* Activo */
 .nav-menu .active {
   color: #6ab42f;
   border-bottom: 2px solid #6ab42f;
 }
 
-/* Botón Admisión */
 .btn-admision {
   background: #8bc34a;
   color: white !important;
-  padding: 10.8px 18px; /* aumentado */
+  padding: 10.8px 18px;
   border-radius: 6px;
-  font-size: 14.4px; /* más visible */
+  font-size: 14.4px;
 }
 
 .btn-admision:hover {
   background: #7cb342;
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -144,7 +105,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 45px; /* ajustado por altura mayor del header */
+  top: 45px;
   left: 0;
   background: white;
   border: 1px solid #ccc;
@@ -164,11 +125,40 @@ body {
   background: #f0f0f0;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
   display: block;
+}
+/* Efecto shrink para el header al hacer scroll */
+header.shrink .top-bar {
+  height: 0;
+  padding: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+header.shrink .header-container {
+  padding: 10px 45px;
+}
+header.shrink .logo-colegio {
+  height: 60px;
+}
+header.shrink .nav-menu a {
+  font-size: 15px;
+}
+header.shrink .btn-admision {
+  padding: 8px 15px;
+  font-size: 13px;
 }
 
 /* ------------ Contenido Principal ----------- */
+
+/* --- Banner Específico --- */
+.banner-incendios {
+    background-image: url('https://i.postimg.cc/L5Dm9z4W/firefighter.jpg') !important;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
 
 /* Imagen y titulo */
 main {
@@ -176,20 +166,6 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-}
-
-.contenedor-titulo {
-    z-index: 10;
-    width: 100%;
-    height: 70vh;
-    img {
-        z-index: -1;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        filter: brightness(70%);
-        object-fit: cover;
-    }
 }
 
 .titulo {
@@ -212,18 +188,6 @@ main {
   font-size: 2em;
   color:#004080;
   z-index: 999;
-}
-
-.curva {
-  z-index: 20;
-  position: absolute;
-  bottom: 5vh;
-  left: 0;
-  margin-top: 0;
-  width: 100%;
-  height: 15%;         
-  background: #fff;
-  clip-path: ellipse(60% 100% at 50% 100%);
 }
 
 .video-yt {
