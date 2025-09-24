@@ -201,7 +201,7 @@ main {
 
 .titulo-principal {
   font-size: 80px;
-  color: white;
+  color: rgba(255, 255, 255, 0.925);
   z-index: 998;
   position: absolute;
 }
@@ -248,7 +248,7 @@ main {
   margin-top: 5vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   gap: 15vw;
 }
 
@@ -270,10 +270,13 @@ main {
 .resumen-seccion {
   width: 30%;
   text-align: center;
+  border: solid 1px rgb(177, 177, 177);
+  padding: 2em;
   p {
-    font-weight: 100;
+    font-weight: 600;
     color: #004080;
     font-size: 1.4em;
+    font-family: "Open Sans", sans-serif;
   }
   
 }
