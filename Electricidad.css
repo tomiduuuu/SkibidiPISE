@@ -40,6 +40,8 @@
     padding: 30px;
     text-align: center;
     border-top: 5px solid #00457c;
+    border-bottom: 5px solid #00457c;
+
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
