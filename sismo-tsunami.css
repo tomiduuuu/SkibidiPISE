@@ -141,7 +141,7 @@ header.shrink .btn-admision {
 }
 
 
-/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA Sismosy Tsunami --- */
+/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA Sismos y Tsunami --- */
 
 /* --- Contenedor General de Contenido para esta página --- */
 .contenido-container {
@@ -151,7 +151,7 @@ header.shrink .btn-admision {
 }
 
 /* --- Banner Específico --- */
-.banner-fuga {
+.banner-sismo {
     background-image: url('https://i.postimg.cc/yNKXcb4X/Terremoto-de-2010.jpg');
     background-size: cover;
     background-position: center center; /* <-- Asegúrate de que esté así */
@@ -159,6 +159,17 @@ header.shrink .btn-admision {
 }
 
 /* --- Sección 1: Protocolo de Pasos --- */
+.subtitulo-sismos {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: -50px;
+}
+
 .protocolo-pasos {
     padding: 80px 0;
     background-color: #ffffff;
