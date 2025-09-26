@@ -1,173 +1,184 @@
-/* --- ESTILOS DEL HEADER --- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white;
-  transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .top-bar {
-  background: #00457c;
-  height: 54px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 36px;
-  transition: all 0.3s ease;
+    background: #00457c;
+    height: 54px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 36px;
+    transition: all 0.3s ease;
 }
 
 .social-icons {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-icons a {
-  color: #00457c; /* Color del icono por defecto (azul oscuro) */
-  font-size: 18px;
-  background: white; /* Fondo del círculo por defecto (blanco) */
-  padding: 8px;
-  border-radius: 50%;
-  transition: 0.3s;
+    color: #00457c;
+    font-size: 18px;
+    background: white;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 .social-icons a:hover {
-  background: #6ab42f; /* El fondo del círculo se pone verde */
-  color: white; /* El icono se pone blanco para contrastar */
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 22.5px 45px;
-  font-family: Arial, sans-serif;
-  transition: all 0.3s ease;
+    background: #6ab42f;
+    color: white;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22.5px 45px;
+    transition: all 0.3s ease;
 }
 
 .logo-colegio {
-  height: 90px;
-  transition: all 0.3s ease;
+    height: 90px;
+    transition: all 0.3s ease;
 }
 
 .nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 22.5px;
+    display: flex;
+    align-items: center;
+    gap: 22.5px;
 }
 
 .nav-menu a {
-  text-decoration: none;
-  color: #00457c;
-  font-weight: bold;
-  font-size: 16.2px;
-  transition: 0.3s;
+    text-decoration: none;
+    color: #00457c;
+    font-weight: bold;
+    font-size: 16.2px;
+    transition: 0.3s;
 }
 
 .nav-menu .active {
-  color: #6ab42f;
-  border-bottom: 2px solid #6ab42f;
+    color: #6ab42f;
 }
 
 .btn-admision {
-  background: #8bc34a;
-  color: white !important;
-  padding: 10.8px 18px;
-  border-radius: 6px;
-  font-size: 14.4px;
-}
-
-.btn-admision:hover {
-  background: #7cb342;
+    background: #8bc34a;
+    color: white !important;
+    padding: 10.8px 18px;
+    border-radius: 6px;
+    font-size: 14.4px;
 }
 
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  top: 45px;
-  left: 0;
-  background: white;
-  border: 1px solid #ccc;
-  min-width: 150px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
 
 .dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: #00457c;
-  text-decoration: none;
+    display: block;
+    padding: 10px;
 }
 
 .dropdown-content a:hover {
-  background: #f0f0f0;
+    background: #f0f0f0;
 }
 
 .dropdown:hover .dropdown-content,
 .dropdown.active .dropdown-content {
-  display: block;
+    display: block;
 }
-/* Efecto shrink para el header al hacer scroll */
+
 header.shrink .top-bar {
-  height: 0;
-  padding: 0;
-  opacity: 0;
-  overflow: hidden;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
 }
+
 header.shrink .header-container {
-  padding: 10px 45px;
+    padding: 10px 45px;
 }
+
 header.shrink .logo-colegio {
-  height: 60px;
-}
-header.shrink .nav-menu a {
-  font-size: 15px;
-}
-header.shrink .btn-admision {
-  padding: 8px 15px;
-  font-size: 13px;
+    height: 60px;
 }
 
+/* --- 2. ESTILOS DE PÁGINA "SISMOS Y TSUNAMI" (ESCRITORIO) --- */
+.banner-pise {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    text-align: center;
+    margin-top: 162px; /* Espacio para el header fijo */
+    z-index: 1;
+}
 
-/* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA Sismos y Tsunami --- */
+.banner-sismo {
+    background-image: url('https://i.postimg.cc/yNKXcb4X/Terremoto-de-2010.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+    min-height: 450px;
+}
 
-/* --- Contenedor General de Contenido para esta página --- */
+.banner-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+.banner-content h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.curva {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    border-top-left-radius: 100% 80px;
+    border-top-right-radius: 100% 80px;
+}
+
 .contenido-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-/* --- Banner Específico --- */
-.banner-sismo {
-    background-image: url('https://i.postimg.cc/yNKXcb4X/Terremoto-de-2010.jpg');
-    background-size: cover;
-    background-position: center center; /* <-- Asegúrate de que esté así */
-    /* ... el resto de tus propiedades ... */
-}
-
-/* --- Sección 1: Protocolo de Pasos --- */
-.subtitulo-sismos {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 50px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: -50px;
 }
 
 .protocolo-pasos {
@@ -179,7 +190,17 @@ header.shrink .btn-admision {
     text-align: center;
     color: #00457c;
     font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.subtitulo-sismos {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
     margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pasos-grid {
@@ -194,7 +215,6 @@ header.shrink .btn-admision {
     padding: 30px;
     text-align: center;
     border-top: 5px solid #00457c;
-    border-bottom: 5px solid #00457c;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -218,19 +238,12 @@ header.shrink .btn-admision {
     margin: 0 auto 20px auto;
 }
 
-.paso h3 {
-    color: #00457c;
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
 .paso p {
     color: #555;
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* --- Sección 2: Prevención --- */
 .prevencion {
     padding: 80px 0;
     background-color: #f8f9fa;
@@ -253,63 +266,6 @@ header.shrink .btn-admision {
     margin-right: auto;
 }
 
-.lista-prevencion {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    border-left: 5px solid #6ab42f;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.lista-prevencion h3 {
-    color: #c82333; /* Rojo para la advertencia */
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-}
-
-.lista-prevencion h3 i {
-    margin-right: 10px;
-}
-
-.lista-prevencion ul {
-    list-style: none;
-    padding: 0;
-}
-
-.lista-prevencion ul li {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-    line-height: 1.7;
-    display: flex;
-    align-items: flex-start;
-}
-
-.lista-prevencion ul li i {
-    color: #f0ad4e; /* Amarillo para el ícono de exclamación */
-    margin-right: 15px;
-    margin-top: 4px;
-}
-/* --- Sección 3: Consejos --- */
-.consejos {
-    padding: 80px 0;
-    background-color: #ffffff;
-}
-
-.consejos h2 {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-}
-
-.consejos p {
-  padding: 10px;
-
-}
-
 .consejos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -317,106 +273,161 @@ header.shrink .btn-admision {
 }
 
 .consejos-card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 1px solid #6ab42f;
+    background-color: #ffffff;
+    border-left: 5px solid #6ab42f;
     border-radius: 10px;
     padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-/* --- Sección 4: Video sismo o tsunami --- */
+.consejos-card h3 {
+    color: #00457c;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.consejos-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
 .contenedor {
-  text-align: center; /* Centra el texto y el video */
-  background-color: #00457c;
+    padding: 50px 0;
+    text-align: center;
+    background-color: #00457c;
 }
 
 .contenedor h2 {
-  padding-top: 25px;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color:white;
-}
-
-.video {
-  display: flex;
-  justify-content: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .video-card {
-  max-width: 600px;
-  width: 100%;
-  padding: 25px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.video-card iframe,
-.video-card video {
-  width: 100%; /* Que se ajuste al ancho del card */
-  
-  border-radius: 10px;
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
 }
 
-/* --- ESTILOS DEL FOOTER --- */
-
+/* --- 3. ESTILOS DEL FOOTER (Compartidos) --- */
 footer {
-  background-color: #f4f5f7;
-  border-top: 15px solid #005293;
+    background-color: #f4f5f7;
+    border-top: 15px solid #005293;
 }
 
 .footer-container {
-  display: flex;
-  align-items: center;
-  padding: 20px 40px;
-  border-top: 15px solid #83b81a;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    border-top: 15px solid #83b81a;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .footer-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  width: 50%;
-}
-
-.footer-left .logo {
-  width: 50%;
-  border-radius: 50%;
+    width: 50%;
 }
 
 .footer-right {
-  text-align: left;
-  width: 50%;
-  font-size: 14px;
-  color: #004080;
+    width: 50%;
+    font-size: 14px;
+    color: #004080;
 }
 
 .footer-right a {
-  color: #0073c6;
-  text-decoration: none;
-}
-
-.footer-right .social-icons {
-  margin-bottom: 8px;
-}
-
-.footer-right .social-icons a {
-  margin-right: 10px;
-  color: #003366;
-  text-decoration: none;
-  font-size: 18px;
+    color: #0073c6;
+    text-decoration: none;
 }
 
 .footer-bottom {
-  background: #004080;
-  text-align: center;
-  color: rgb(231, 231, 231);
-  font-size: 12px;
-  padding: 15px 8px;
-}
-
-.parrafos {
-  border-top: 3px solid #003366;
+    background: #004080;
+    text-align: center;
+    color: rgb(231, 231, 231);
+    font-size: 12px;
+    padding: 15px;
 }
 
 footer p {
-  padding-bottom: 2px;
-  color: #003366;
-  font-weight: bold;
+    padding-bottom: 8px;
+    color: #003366;
+    font-weight: bold;
+}
+
+/* =================================================================== */
+/* --- 4. SECCIÓN RESPONSIVE PARA MÓVILES Y TABLETS --- */
+/* =================================================================== */
+
+@media (max-width: 992px) {
+
+    /* --- HEADER RESPONSIVE --- */
+    header .header-container {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px 15px;
+    }
+
+    header .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px 20px;
+        width: 100%;
+    }
+
+    /* --- CONTENIDO PRINCIPAL RESPONSIVE --- */
+    .banner-pise {
+        margin-top: 0;
+        padding-top: 220px; /* Espacio para el header fijo */
+    }
+
+    .banner-sismo {
+        height: 50vh; /* Altura de banner reducida */
+        min-height: 300px;
+    }
+
+    .banner-content h1 {
+        font-size: 2.5em;
+    }
+    .banner-content h2 {
+        font-size: 1.2em;
+    }
+
+    .protocolo-pasos, .prevencion {
+        padding: 60px 0;
+    }
+
+    .protocolo-pasos h2, .prevencion h2 {
+        font-size: 2rem;
+    }
+
+    .pasos-grid {
+        grid-template-columns: 1fr; /* Apila las tarjetas de pasos */
+    }
+
+    .consejos-grid {
+        grid-template-columns: 1fr; /* Apila las tarjetas de consejos */
+    }
+
+    /* --- FOOTER RESPONSIVE --- */
+    footer .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    footer .footer-left,
+    footer .footer-right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

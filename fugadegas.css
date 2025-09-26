@@ -380,3 +380,119 @@ footer p {
   color: #003366;
   font-weight: bold;
 }
+/* --- ESTILOS RESPONSIVE PARA MÓVILES --- */
+@media (max-width: 768px) {
+
+    /* --- AJUSTES GENERALES --- */
+    body {
+        /* Evita que las fuentes se vean demasiado pequeñas en móviles */
+        -webkit-text-size-adjust: 100%;
+    }
+
+    /* --- HEADER RESPONSIVE --- */
+    header .header-container {
+        /* Apila el logo y el menú uno sobre otro y los centra */
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    header .logo-colegio {
+        /* Reduce el tamaño del logo en móviles */
+        height: 70px;
+    }
+
+    header .nav-menu {
+        /* Permite que los enlaces del menú pasen a la siguiente línea si no caben */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    header .nav-menu a {
+        font-size: 15px; /* Ligeramente más pequeño para que quepa mejor */
+    }
+
+    /* NOTA: Para una mejor experiencia móvil, se recomienda implementar un "menú de hamburguesa"
+       con JavaScript que oculte .nav-menu y lo muestre al tocar un ícono. */
+
+    /* --- PÁGINA FUGA DE GAS RESPONSIVE --- */
+
+    /* Contenedor principal */
+    .contenido-container {
+        padding: 0 15px; /* Menos padding lateral en móviles */
+    }
+    
+    /* Títulos de sección */
+    .protocolo-pasos h2,
+    .prevencion h2 {
+        font-size: 2rem; /* Reduce el tamaño de los títulos principales */
+        margin-bottom: 30px;
+    }
+
+    /* Grid de Pasos (de 2 columnas a 1 columna) */
+    .pasos-grid {
+        /* Cambia el grid de 2 columnas a 1 sola columna */
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Sección de Prevención */
+    .prevencion {
+        padding: 60px 0;
+    }
+    .subtitulo-prevencion {
+        font-size: 1.1rem;
+    }
+    .lista-prevencion {
+        padding: 25px; /* Menos padding interno en la lista */
+    }
+    .lista-prevencion ul li {
+        font-size: 1rem; /* Ajuste de fuente para mejor lectura */
+    }
+    .lista-prevencion h3 {
+        font-size: 1.3rem;
+    }
+    
+    /* Sección de Video */
+    .contenedor h2 {
+        font-size: 1.8rem;
+        padding-top: 20px;
+    }
+    .video-card {
+        padding: 15px; /* Menos padding para el contenedor del video */
+    }
+
+    /* --- FOOTER RESPONSIVE --- */
+    .footer-container {
+        /* Apila las dos secciones del footer */
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .footer-left,
+    .footer-right {
+        /* Ambas secciones ocupan el ancho completo */
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .footer-left {
+        /* Centra el logo */
+        justify-content: center;
+    }
+
+    .footer-right .social-icons {
+        /* Centra los íconos sociales */
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .footer-bottom {
+        padding: 15px;
+        font-size: 11px;
+    }
+}
