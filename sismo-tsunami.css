@@ -293,30 +293,26 @@ header.shrink .btn-admision {
     margin-top: 4px;
 }
 /* --- Sección 3: Consejos --- */
-.consejos {
+
+.Consejos {
     padding: 80px 0;
-    background-color: #ffffff;
+    background-color: #00457c;
 }
 
-.consejos h2 {
+.Consejos h2 {
     text-align: center;
     color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 50px;
 }
 
-.consejos p {
-  padding: 10px;
-
-}
-
-.consejos-grid {
+.consejo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
 
-.consejos-card {
+.consejo-card {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid #6ab42f;
     border-radius: 10px;
@@ -326,7 +322,7 @@ header.shrink .btn-admision {
 /* --- Sección 4: Video sismo o tsunami --- */
 .contenedor {
   text-align: center; /* Centra el texto y el video */
-  background-color: #00457c;
+  background-color: #005293;
 }
 
 .contenedor h2 {
@@ -419,4 +415,29 @@ footer p {
   padding-bottom: 2px;
   color: #003366;
   font-weight: bold;
+}
+
+.tipos-contacto {
+    padding: 80px 0;
+    background-color: #00457c;
+}
+
+.tipos-contacto h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.contacto-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #6ab42f;
+    border-radius: 10px;
+    padding: 30px;
 }
