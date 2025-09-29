@@ -1,5 +1,8 @@
+/* =================================================================== */
+/* ARCHIVO COMPLETO Y RESPONSIVE: USO DE DEA                           */
+/* =================================================================== */
 
-/* --- 1. ESTILOS GENERALES Y RESET --- */
+/* --- 1. ESTILOS GENERALES Y HEADER --- */
 * {
     padding: 0;
     margin: 0;
@@ -11,13 +14,12 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
-/* --- 2. ESTILOS DEL HEADER (ESCRITORIO) --- */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
     background: white;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -65,12 +67,6 @@ header {
     transition: all 0.3s ease;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
 .logo-colegio {
     height: 90px;
     transition: all 0.3s ease;
@@ -92,7 +88,6 @@ header {
 
 .nav-menu .active {
     color: #6ab42f;
-    border-bottom: 2px solid #6ab42f;
 }
 
 .btn-admision {
@@ -101,10 +96,6 @@ header {
     padding: 10.8px 18px;
     border-radius: 6px;
     font-size: 14.4px;
-}
-
-.btn-admision:hover {
-    background: #7cb342;
 }
 
 .dropdown {
@@ -126,43 +117,49 @@ header {
 .dropdown-content a {
     display: block;
     padding: 10px;
-    color: #00457c;
 }
 
-.dropdown-content a:hover {
-    background: #f0f0f0;
-}
-
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
     display: block;
 }
 
-/* --- 3. CONTENIDO PRINCIPAL DE LA PÁGINA "DEA" (ESCRITORIO) --- */
-
-/* Banner Superior */
-main {
-    background-color: #fff;
+/* --- 2. CONTENIDO "DEA" (ESCRITORIO) --- */
+.banner-pise {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    text-align: center;
+    margin-top: 162px;
+    z-index: 1;
 }
 
 .banner-dea {
-    background-image: url('https://i.ibb.co/Z1krq4g4/dea.png') !important;
+    background-image: url('https://i.ibb.co/Z1krq4g4/dea.png');
     background-size: cover;
     background-position: center center;
-    /* ----> CAMBIO CLAVE PARA EL BANNER GRANDE <---- */
-    height: 70vh; /* Ocupará el 70% de la altura de la pantalla del computador */
-    min-height: 450px; /* Una altura mínima por si la pantalla es muy ancha y poco alta */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    height: 70vh;
+    min-height: 450px;
 }
 
-.banner-dea h1 {
-    font-size: 4.5em; /* Un poco más grande para que coincida con la imagen */
+.banner-content h1 {
+    font-size: 4em;
 }
 
-/* Sección Video */
+.curva {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-top-left-radius: 100% 80px;
+    border-top-right-radius: 100% 80px;
+}
+
 .video-yt {
     padding: 5vh 20px;
     display: flex;
@@ -173,7 +170,8 @@ main {
 .titulo-seccion {
     font-size: 2.2em;
     color: #004080;
-    margin-bottom: 2em;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 .borde {
@@ -222,7 +220,6 @@ main {
     line-height: 1.6;
 }
 
-/* Sección Slider de Pasos */
 .seccion-pasos {
     padding: 5em 20px;
     display: flex;
@@ -245,12 +242,12 @@ main {
 .slider {
     display: flex;
     height: 100%;
-    width: 1000%;
+    width: 900%; /* 9 pasos */
     transition: transform 0.6s ease-in-out;
 }
 
 .paso {
-    width: 10%;
+    width: calc(100% / 9); /* 1 paso */
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -283,7 +280,7 @@ main {
     margin-bottom: 20px;
 }
 
-.columna-texto p {
+.columna-texto p, .columna-texto ul {
     font-weight: 400;
     color: #333;
     font-size: 1em;
@@ -292,8 +289,9 @@ main {
     flex-grow: 1;
 }
 
-.negrita {
-    font-weight: 800;
+.columna-texto ul {
+    list-style: none;
+    padding: 0;
 }
 
 .contenedor-botones {
@@ -314,11 +312,7 @@ main {
     transition: ease all 0.3s;
 }
 
-.contenedor-botones button:hover {
-    background: #69a011;
-}
-
-/* --- 4. ESTILOS DEL FOOTER (ESCRITORIO) --- */
+/* --- 3. ESTILOS DEL FOOTER (Compartidos) --- */
 footer {
     background-color: #f4f5f7;
     border-top: 15px solid #005293;
@@ -329,34 +323,21 @@ footer {
     align-items: center;
     padding: 40px;
     border-top: 15px solid #83b81a;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .footer-left {
     width: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.footer-left .logo img {
-    width: 180px;
 }
 
 .footer-right {
     width: 50%;
 }
 
-.footer-right p {
+footer p {
     color: #003366;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-right a {
-    color: #0073c6;
-    text-decoration: none;
-}
-.footer-right a:hover {
-    text-decoration: underline;
 }
 
 .footer-bottom {
@@ -368,10 +349,15 @@ footer {
 }
 
 /* =================================================================== */
-/* --- 5. SECCIÓN RESPONSIVE PARA MÓVILES Y TABLETS --- */
+/* --- 4. SECCIÓN RESPONSIVE PARA MÓVILES Y TABLETS --- */
 /* =================================================================== */
 
 @media (max-width: 992px) {
+
+    /* --- AJUSTE GENERAL PARA HEADER FIJO --- */
+    body {
+        padding-top: 160px;
+    }
 
     /* --- HEADER RESPONSIVE --- */
     header .header-container {
@@ -387,33 +373,32 @@ footer {
         width: 100%;
     }
 
-    /* --- CONTENIDO PRINCIPAL RESPONSIVE --- */
-    main {
-        padding-top: 220px; /* Espacio VITAL para el header fijo */
+    /* --- CONTENIDO RESPONSIVE --- */
+    main .banner-pise {
+        margin-top: 0 !important;
+        /* ----> AJUSTE CLAVE REFORZADO: Forzamos el centrado del contenido <---- */
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
     
-    /* ----> AJUSTE DEL BANNER PARA MÓVIL <---- */
-    .banner-incendios {
-        height: 45vh; /* Ocupará el 45% de la pantalla del teléfono */
-        min-height: 250px;
+    main .banner-dea {
+        height: 50vh !important;
+        min-height: 300px !important;
+        background-position: center center !important;
     }
 
-    .banner-incendios h1 {
-        font-size: 2.5em; /* Título del banner más pequeño */
+    .banner-content h1 {
+        font-size: 2.5em;
+        padding: 0 15px;
     }
 
     .titulo-seccion {
         font-size: 1.8em;
-        text-align: center;
         padding: 0 15px;
     }
     
     /* Video y Texto */
-    section.video-yt {
-        height: auto !important; /* Altura automática OBLIGATORIA */
-        padding: 40px 15px;
-    }
-    
     .contenedor-columnas {
         flex-direction: column;
         align-items: center;
@@ -432,7 +417,7 @@ footer {
     }
 
     .contenedor-pasos, .paso {
-        height: auto !important; /* Altura automática OBLIGATORIA */
+        height: auto !important;
     }
 
     .paso {
@@ -446,14 +431,8 @@ footer {
     }
     
     .columna-img {
-        height: 250px; /* Altura fija para la imagen */
-    }
-
-    .columna-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* La imagen cubre el espacio sin deformarse */
-        object-position: center;
+        height: 250px;
+        margin-bottom: 20px;
     }
 
     /* --- FOOTER RESPONSIVE --- */
@@ -467,7 +446,8 @@ footer {
     footer .footer-left,
     footer .footer-right {
         width: 100%;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 }
