@@ -230,82 +230,21 @@ header.shrink .btn-admision {
     line-height: 1.6;
 }
 
-/* --- Sección 2: Prevención --- */
-.prevencion {
-    padding: 80px 0;
-    background-color: #f8f9fa;
-}
 
-.prevencion h2 {
-    text-align: center;
-    color: #00457c;
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.subtitulo-prevencion {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.lista-prevencion {
-    background-color: white;
-    border-radius: 10px;
-    padding: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    border-left: 5px solid #6ab42f;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.lista-prevencion h3 {
-    color: #c82333; /* Rojo para la advertencia */
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-}
-
-.lista-prevencion h3 i {
-    margin-right: 10px;
-}
-
-.lista-prevencion ul {
-    list-style: none;
-    padding: 0;
-}
-
-.lista-prevencion ul li {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 15px;
-    line-height: 1.7;
-    display: flex;
-    align-items: flex-start;
-}
-
-.lista-prevencion ul li i {
-    color: #f0ad4e; /* Amarillo para el ícono de exclamación */
-    margin-right: 15px;
-    margin-top: 4px;
-}
-/* --- Sección 3: Consejos --- */
-.consejos {
+/* --- Sección 2: Consejos --- */
+.Consejos {
     padding: 80px 0;
     background-color: #ffffff;
 }
 
-.consejos h2 {
+.Consejos h2 {
     text-align: center;
-    color: #ffffff;
+    color: #00457c;
     font-size: 2.5rem;
     margin-bottom: 50px;
 }
 
-.consejos p {
+.Consejos p {
   padding: 10px;
 
 }
@@ -323,7 +262,15 @@ header.shrink .btn-admision {
     padding: 30px;
 }
 
-/* --- Sección 4: Video sismo o tsunami --- */
+.consejos-card p{
+  color: #3f3f3f;
+}
+
+.consejos-card h3{
+  color: #003366;
+}
+
+/* --- Sección 3: Video sismo o tsunami --- */
 .contenedor {
   text-align: center; /* Centra el texto y el video */
   background-color: #00457c;
