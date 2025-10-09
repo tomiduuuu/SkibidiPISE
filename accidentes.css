@@ -1,4 +1,123 @@
 /* --- ESTILOS ESPECÍFICOS PARA LA PÁGINA DE ACCIDENTES --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+    background: #00457c;
+    height: 54px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 36px;
+    transition: all 0.3s ease;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #00457c;
+    font-size: 18px;
+    background: white;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: #6ab42f;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22.5px 45px;
+    transition: all 0.3s ease;
+}
+
+.logo-colegio {
+    height: 90px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 22.5px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #00457c;
+    font-weight: bold;
+    font-size: 16.2px;
+    transition: 0.3s;
+}
+
+.nav-menu .active {
+    color: #6ab42f;
+    border-bottom: 2px solid #6ab42f;
+}
+
+.btn-admision {
+    background: #8bc34a;
+    color: white !important;
+    padding: 10.8px 18px;
+    border-radius: 6px;
+    font-size: 14.4px;
+}
+
+.btn-admision:hover {
+    background: #7cb342;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #00457c;
+}
+
+.dropdown-content a:hover {
+    background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content {
+    display: block;
+}
 
 /* --- Contenedor General --- */
 .contenido-container {
