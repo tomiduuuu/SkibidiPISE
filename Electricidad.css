@@ -9,10 +9,11 @@
 
 /* --- Banner Específico --- */
 .banner-electricidad {
-    background-image: url('https://www.experta.com.ar/blogg/wp-content/uploads/sites/2/2024/11/ACCIDENTES-EL%C3%89CTRICOS-EN-EL-HOGAR.jpg');
+    background-image: url('https://estructurales.es/wp-content/uploads/2024/05/mFEVRFUYG8.jpg');
     background-size: cover;
-    background-position: center center; /* <-- Asegúrate de que esté así */
-    /* ... el resto de tus propiedades ... */
+    /* --- L    ÍNEA MODIFICADA --- */
+    /* Mueve la imagen verticalmente para un mejor encuadre */
+    background-position: center 50%;
 }
 
 /* --- Sección 1: Protocolo de Pasos --- */
