@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+  <!-- ==============================================
+       METADATOS Y ENLACES DE ESTILOS
+  =============================================== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riesgo Eléctrico - PISE</title>
-  
+
+  <!-- Enlaces a hojas de estilo -->
   <link rel="stylesheet" href="style.css">
-  
   <link rel="stylesheet" href="electricidad.css">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Íconos de Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-<!-- Header -->
+  <!-- ==============================================
+       ENCABEZADO Y MENÚ DE NAVEGACIÓN
+  =============================================== -->
   <header>
+    <!-- Barra superior con redes sociales -->
     <div class="top-bar">
       <div class="social-icons">
         <a href="https://www.facebook.com/icbvina"><i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/icbvina"><i class="fab fa-instagram"></i></a>
         <a href="https://www.youtube.com/@icbvina"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.linkedin.com/company/fundaci%C3%B3n-educacional-comeduc"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/company/fundaci%C3%B3n-educacional-comeduc">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </div>
-<!--Logo del liceo-->  
+
+    <!-- Contenedor principal del header -->
     <div class="header-container">
+      <!-- Logo del colegio -->
       <div class="logo">
-        <img class="logo-colegio" src="https://insucoabg.cl/wp-content/uploads/2025/05/logo-i-comercial-comeduc.svg" alt="Logo Colegio">
+        <img class="logo-colegio"
+             src="https://insucoabg.cl/wp-content/uploads/2025/05/logo-i-comercial-comeduc.svg"
+             alt="Logo Colegio">
       </div>
-<!--Menú de navegación-->    
+
+      <!-- Menú de navegación principal -->
       <nav class="nav-menu">
         <a href="#" class="active">Home</a>
+
+        <!-- Menú desplegable: Instituto -->
         <div class="dropdown">
           <a href="#">Instituto ▾</a>
           <div class="dropdown-content">
             <a href="#">Nosotros</a>
             <a href="#">Equipo</a>
             <a href="#">Comeduc</a>
-            <a href="#">Politica de Gestión Educativa</a>
-            <a href="#">Politica de Buen Trato Laboral</a>
+            <a href="#">Política de Gestión Educativa</a>
+            <a href="#">Política de Buen Trato Laboral</a>
             <a href="#">Cede</a>
             <a href="#">Documentos</a>
           </div>
         </div>
-        <!--Menú de secciones Pise-->
+
+        <!-- Menú desplegable: PISE -->
         <div class="dropdown">
           <a href="#">PISE ▾</a>
           <div class="dropdown-content">
@@ -51,30 +71,34 @@
             <a href="electricidad.html">Riesgo Eléctrico</a>
             <a href="incendios.html">Incendios</a>
             <a href="sismo-tsunami.html">Sismo y Tsunami</a>
-            <a href="accidentes.html">Accidentes </a>
+            <a href="accidentes.html">Accidentes</a>
             <a href="dea.html">Uso de Desfibrilador</a>
-            <a href="fugadegas.html"> Fuga de Gas</a>
+            <a href="fugadegas.html">Fuga de Gas</a>
           </div>
         </div>
-        <!--Menú de especialidades-->  
+
+        <!-- Menú desplegable: Especialidades -->
         <div class="dropdown">
           <a href="#">Especialidades ▾</a>
           <div class="dropdown-content">
-            <a href="#">Administracion Mencion Recursos Humanos</a>
-            <a href="#">Administracion Mencion Logistica</a>
-            <a href="#">Programacion</a>
+            <a href="#">Administración Mención Recursos Humanos</a>
+            <a href="#">Administración Mención Logística</a>
+            <a href="#">Programación</a>
             <a href="#">Contabilidad</a>
           </div>
         </div>
-        <!--Navegación a otras secciones-->  
+
+        <!-- Otras secciones -->
         <a href="#" class="btn-admision">Admisión</a>
         <a href="#">Noticias</a>
         <a href="#">Contacto</a>
       </nav>
     </div>
   </header>
-  
-  <!--Imagen de sección propia-->
+
+  <!-- ==============================================
+       SECCIÓN BANNER PRINCIPAL
+  =============================================== -->
   <section class="banner-pise banner-electricidad">
     <div class="banner-content">
       <h1>Riesgo Eléctrico</h1>
@@ -82,119 +106,181 @@
     </div>
     <div class="curva"></div>
   </section>
-  
-  <!--Contenido Principal-->
+
+  <!-- ==============================================
+       CONTENIDO PRINCIPAL
+  =============================================== -->
   <main>
-    <!--Sección de pasos a seguir en protocolo electrico-->
+
+    <!-- ====== PROTOCOLO PASO A PASO ====== -->
     <section class="protocolo-pasos">
       <div class="contenido-container">
-        <!--Titulo de la sección-->
         <h2><i class="fas fa-bolt"></i> ¿Qué hacer ante un cortocircuito?</h2>
+
         <div class="pasos-grid">
+          <!-- Paso 1 -->
           <div class="paso">
-            <!--Paso 1-->
             <div class="paso-icono">1</div>
             <h3>Chequea el cuadro eléctrico</h3>
-            <p>Dirígete al cuadro eléctrico general. **No toques los fusibles**. Solo verifica visualmente que el interruptor principal esté desconectado para evitar mayores riesgos.</p>
+            <p>
+              Dirígete al cuadro eléctrico general. <strong>No toques los fusibles</strong>.
+              Solo verifica visualmente que el interruptor principal esté desconectado para evitar mayores riesgos.
+            </p>
           </div>
+
+          <!-- Paso 2 -->
           <div class="paso">
-            <!--Paso 2-->
             <div class="paso-icono">2</div>
             <h3>Desconecta los artefactos</h3>
-            <p>En el área de la falla, desenchufa todos los aparatos. Para mayor seguridad, si es posible, desconecta todos los artefactos del establecimiento para proteger a las personas y los equipos.</p>
+            <p>
+              En el área de la falla, desenchufa todos los aparatos. Para mayor seguridad,
+              si es posible, desconecta todos los artefactos del establecimiento.
+            </p>
           </div>
+
+          <!-- Paso 3 -->
           <div class="paso">
-            <!--Paso 3-->
             <div class="paso-icono">3</div>
             <h3>Aleja de fuentes de agua</h3>
-            <p>El agua es un excelente conductor de electricidad. Asegúrate de que no haya artefactos eléctricos cerca de líquidos, ya que esto agrava el peligro y puede causar accidentes severos.</p>
+            <p>
+              El agua es un excelente conductor de electricidad. Asegúrate de que no haya artefactos eléctricos cerca
+              de líquidos, ya que esto agrava el peligro y puede causar accidentes severos.
+            </p>
           </div>
+
+          <!-- Paso 4 -->
           <div class="paso">
-            <!--Paso 4-->
             <div class="paso-icono">4</div>
             <h3>Avisa a un colaborador</h3>
-            <p>Informa de inmediato a un inspector, profesor o cualquier colaborador del establecimiento. Ellos activarán el protocolo de emergencia y contactarán a personal calificado.</p>
+            <p>
+              Informa de inmediato a un inspector, profesor o colaborador del establecimiento.
+              Ellos activarán el protocolo de emergencia y contactarán a personal calificado.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!--Sección de Prevención el riesgo electrico-->
+    <!-- ====== SECCIÓN DE PREVENCIÓN ====== -->
     <section class="prevencion">
-      <!--Contenedor de titulo y subtito de prevención-->
       <div class="contenido-container">
         <h2><i class="fas fa-shield-alt"></i> ¿Cómo prevenir los riesgos?</h2>
-        <p class="subtitulo-prevencion">La seguridad es tarea de todos. Evita realizar las siguientes acciones para mantener un entorno seguro:</p>
-        <!--Contenedor de texto y lista de prevencion de riesgo electrico-->
+        <p class="subtitulo-prevencion">
+          La seguridad es tarea de todos. Evita realizar las siguientes acciones
+          para mantener un entorno seguro:
+        </p>
+
+        <!-- Lista de acciones no recomendadas -->
         <div class="lista-prevencion">
           <h3><i class="fas fa-times-circle"></i> Es recomendable no utilizar y/o hacer:</h3>
           <ul>
-            <li><i class="fas fa-exclamation-triangle"></i> No utilizar cables dañados, enchufes rotos o aparatos defectuosos.</li>
-            <li><i class="fas fa-exclamation-triangle"></i> No tirar del cable para desconectar un aparato; tómalo del enchufe.</li>
-            <li><i class="fas fa-exclamation-triangle"></i> No introducir objetos extraños en los enchufes (clips, lápices, etc.).</li>
-            <li><i class="fas fa-exclamation-triangle"></i> No tocar aparatos eléctricos con las manos mojadas o cerca de agua.</li>
-            <li><i class="fas fa-exclamation-triangle"></i> No ubicar estufas o tomas de corriente al alcance en zonas húmedas.</li>
+            <li><i class="fas fa-exclamation-triangle"></i> No utilizar cables dañados o enchufes rotos.</li>
+            <li><i class="fas fa-exclamation-triangle"></i> No tirar del cable para desconectar un aparato.</li>
+            <li><i class="fas fa-exclamation-triangle"></i> No introducir objetos extraños en los enchufes.</li>
+            <li><i class="fas fa-exclamation-triangle"></i> No tocar aparatos eléctricos con las manos mojadas.</li>
+            <li><i class="fas fa-exclamation-triangle"></i> No ubicar estufas o tomas de corriente en zonas húmedas.</li>
           </ul>
         </div>
+
+        <!-- Video de prevención -->
+        <div class="video-wrapper">
+          <h3><i class="fas fa-video"></i> Video de Prevención</h3>
+          <div class="video-responsive-container">
+            <iframe src="https://www.youtube.com/embed/FBQVbAyZm2o"
+                    title="Video de Prevención de Riesgo Eléctrico"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!--Sección de contacto electrico-->
+    <!-- ====== TIPOS DE CONTACTO ELÉCTRICO ====== -->
     <section class="tipos-contacto">
-        <div class="contenido-container">
-            <h2><i class="fas fa-info-circle"></i> Tipos de Contacto Eléctrico</h2>
-            <!--Contenedores y tarjetas de información del contacto electrico-->
-            <div class="contacto-grid">
-              <!--Tarjeta con contacto directo-->
-                <div class="contacto-card">
-                    <h3>Contacto Directo</h3>
-                    <p>Ocurre cuando una persona toca directamente partes activas de una instalación, como un cable pelado o el interior de un enchufe. La corriente pasa a través del cuerpo, causando un choque eléctrico.</p>
-                </div>
-                <!--Tarjeta con contacto indirecto-->
-                <div class="contacto-card">
-                    <h3>Contacto Indirecto</h3>
-                    <p>Sucede al tocar la carcasa o parte exterior de un equipo que, por una falla de aislamiento interno, se ha energizado. Aunque normalmente no debería tener corriente, se vuelve peligrosa.</p>
-                </div>
-            </div>
+      <div class="contenido-container">
+        <h2><i class="fas fa-info-circle"></i> Tipos de Contacto Eléctrico</h2>
+
+        <div class="contacto-grid">
+          <!-- Contacto Directo -->
+          <div class="contacto-card">
+            <h3>Contacto Directo</h3>
+            <p>
+              Ocurre cuando una persona toca directamente partes activas de una instalación,
+              como un cable pelado o el interior de un enchufe.
+            </p>
+          </div>
+
+          <!-- Contacto Indirecto -->
+          <div class="contacto-card">
+            <h3>Contacto Indirecto</h3>
+            <p>
+              Sucede al tocar la carcasa o parte exterior de un equipo que, por una falla de aislamiento,
+              se ha energizado. Aunque normalmente no debería tener corriente, se vuelve peligrosa.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
+
   </main>
 
-  <!--Pie de Página-->
+  <!-- ==============================================
+       PIE DE PÁGINA
+  =============================================== -->
   <footer>
-    <!--Logo institucional-->
     <div class="footer-container">
+      <!-- Logo en el pie -->
       <div class="footer-left">
         <div class="logo">
-          <img src="https://insucoabg.cl/wp-content/uploads/2025/05/logo-inst-comercial-comeduc.svg" alt="Logo ICB">
+          <img src="https://insucoabg.cl/wp-content/uploads/2025/05/logo-inst-comercial-comeduc.svg"
+               alt="Logo ICB">
         </div>
       </div>
-      <!--Contacto RR.SS Institucional-->
+
+      <!-- Información de contacto -->
       <div class="footer-right">
         <div class="social-icons">
           <a href="https://www.facebook.com/icbvina" target="_blank"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/icbvina/" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://www.youtube.com/@icbvina" target="_blank"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.linkedin.com/company/fundaci%C3%B3n-educacional-comeduc/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/company/fundaci%C3%B3n-educacional-comeduc/"
+             target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </div>
-        <!--Información Institucional-->
+
         <div class="parrafos">
           <p>Instituto Comercial Bicentenario de Viña del Mar</p>
-          <p>Fono: <a href="tel:+56322130054">(+56 32) 213 0054 Inspectoría</a> - <a href="tel:+56322130055">(+56 32) 213 0055 Secretaría</a></p>
+          <p>
+            Fono:
+            <a href="tel:+56322130054">(+56 32) 213 0054 Inspectoría</a> -
+            <a href="tel:+56322130055">(+56 32) 213 0055 Secretaría</a>
+          </p>
           <p>Dirección: Alberto Blest Gana 398, Viña del Mar</p>
-          <p>Correo electrónico: <a href="mailto:institutoblestgana@comeduc.cl">institutoblestgana@comeduc.cl</a></p>
+          <p>
+            Correo electrónico:
+            <a href="mailto:institutoblestgana@comeduc.cl">
+              institutoblestgana@comeduc.cl
+            </a>
+          </p>
         </div>
       </div>
     </div>
+
     <div class="footer-bottom">
-      Instituto Comercial Bicentenario de Viña del Mar parte de la red de establecimientos de Fundación Educacional Comeduc | 2025
+      Instituto Comercial Bicentenario de Viña del Mar parte de la red de establecimientos
+      de Fundación Educacional Comeduc | 2025
     </div>
   </footer>
-  
-  <!--Código script para animaciones-->
+
+  <!-- ==============================================
+       SCRIPTS DE INTERACTIVIDAD
+  =============================================== -->
+
+  <!-- Script que reduce el tamaño del header al hacer scroll -->
   <script>
     const header = document.querySelector('header');
-  
+
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
         header.classList.add('shrink');
@@ -203,38 +289,34 @@
       }
     });
   </script>
+
+  <!-- Script que controla los menús desplegables -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      
       const dropdowns = document.querySelectorAll('.nav-menu .dropdown');
-  
-      if (dropdowns.length === 0) {
-        return;
-      }
-  
+
+      if (dropdowns.length === 0) return;
+
       dropdowns.forEach(dropdown => {
-        const trigger = dropdown.querySelector('a'); 
-  
+        const trigger = dropdown.querySelector('a');
+
         trigger.addEventListener('click', function (event) {
           event.preventDefault();
-          event.stopPropagation(); 
-  
+          event.stopPropagation();
+
           const isAlreadyActive = dropdown.classList.contains('active');
-  
+
           dropdowns.forEach(d => d.classList.remove('active'));
-  
-          if (!isAlreadyActive) {
-            dropdown.classList.add('active');
-          }
+
+          if (!isAlreadyActive) dropdown.classList.add('active');
         });
       });
-  
+
       window.addEventListener('click', function () {
-        dropdowns.forEach(dropdown => {
-          dropdown.classList.remove('active');
-        });
+        dropdowns.forEach(dropdown => dropdown.classList.remove('active'));
       });
     });
   </script>
+
 </body>
 </html>

@@ -7,7 +7,7 @@ header {
     z-index: 2000;
     background: white;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .top-bar {
@@ -100,7 +100,7 @@ header {
     background: white;
     border: 1px solid #ccc;
     min-width: 150px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     z-index: 1000;
 }
 
@@ -164,7 +164,7 @@ header {
     margin: 0 auto;
     border-top: 5px solid #6ab42f;
     border-bottom: 5px solid #6ab42f;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
@@ -206,7 +206,7 @@ header {
 /* --- Sección de Procedimientos por Gravedad --- */
 .procedimientos-accidentes {
     padding: 80px 20px;
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
 }
 
 .tipo-accidente-card {
@@ -215,13 +215,21 @@ header {
     padding: 30px 40px;
     margin: 0 auto 30px auto;
     max-width: 900px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     border-left: 7px solid;
 }
 
-.tipo-accidente-card.leve { border-color: #28a745; }
-.tipo-accidente-card.medio-grave { border-color: #ffc107; }
-.tipo-accidente-card.grave { border-color: #dc3545; }
+.tipo-accidente-card.leve {
+    border-color: #28a745;
+}
+
+.tipo-accidente-card.medio-grave {
+    border-color: #ffc107;
+}
+
+.tipo-accidente-card.grave {
+    border-color: #dc3545;
+}
 
 .tipo-accidente-card h3 {
     font-size: 1.8rem;
@@ -236,19 +244,27 @@ header {
     font-size: 1.6rem;
 }
 
-.tipo-accidente-card.leve h3 i { color: #28a745; }
-.tipo-accidente-card.medio-grave h3 i { color: #ffc107; }
-.tipo-accidente-card.grave h3 i { color: #dc3545; }
+.tipo-accidente-card.leve h3 i {
+    color: #28a745;
+}
+
+.tipo-accidente-card.medio-grave h3 i {
+    color: #ffc107;
+}
+
+.tipo-accidente-card.grave h3 i {
+    color: #dc3545;
+}
 
 .lista-pasos {
     list-style: none;
     padding-left: 0;
-    counter-reset: pasos-counter; 
+    counter-reset: pasos-counter;
 }
 
 .lista-pasos li {
     position: relative;
-    padding-left: 50px; 
+    padding-left: 50px;
     margin-bottom: 20px;
     font-size: 1.1rem;
     line-height: 1.7;
@@ -256,8 +272,8 @@ header {
 }
 
 .lista-pasos li::before {
-    counter-increment: pasos-counter; 
-    content: counter(pasos-counter); 
+    counter-increment: pasos-counter;
+    content: counter(pasos-counter);
     position: absolute;
     left: 0;
     top: 0;
@@ -273,14 +289,23 @@ header {
     font-size: 1rem;
 }
 
-.tipo-accidente-card.leve .lista-pasos li::before { background-color: #28a745; }
-.tipo-accidente-card.medio-grave .lista-pasos li::before { background-color: #ffc107; color: #333; }
-.tipo-accidente-card.grave .lista-pasos li::before { background-color: #dc3545; }
+.tipo-accidente-card.leve .lista-pasos li::before {
+    background-color: #28a745;
+}
+
+.tipo-accidente-card.medio-grave .lista-pasos li::before {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.tipo-accidente-card.grave .lista-pasos li::before {
+    background-color: #dc3545;
+}
 
 /* --- Sección "Primeros Auxilios para Casos Comunes" --- */
 .tipos-de-accidente-seccion {
     padding: 80px 20px;
-    background-color: #00457c; 
+    background-color: #00457c;
 }
 
 .tipos-de-accidente-seccion h2 {
@@ -323,12 +348,13 @@ header {
 
 /* --- Media Queries para Responsividad --- */
 @media (max-width: 768px) {
+
     .seccion-prevencion-accidentes h2,
     .procedimientos-accidentes h2,
     .tipos-de-accidente-seccion h2 {
         font-size: 2rem;
     }
-    
+
     .prevencion-accidentes-box {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -338,6 +364,7 @@ header {
         font-size: 1rem;
         padding-left: 45px;
     }
+
     .lista-pasos li::before {
         width: 30px;
         height: 30px;
@@ -346,4 +373,35 @@ header {
     .accidentes-info-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* --- Video de Primeros Auxilios (NUEVO CÓDIGO AÑADIDO) --- */
+
+.video-wrapper {
+    max-width: 900px;
+    /* Ancho máximo similar al de las tarjetas */
+    margin: 0 auto 50px auto;
+    /* Centrado y con espacio inferior */
+}
+
+.video-responsive-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #6ab42f;
+    /* Borde verde para que combine con las tarjetas */
+}
+
+.video-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

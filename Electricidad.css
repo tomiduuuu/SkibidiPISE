@@ -11,7 +11,7 @@
 .banner-electricidad {
     background-image: url('https://cortafuegos.cl/wp-content/uploads/2020/07/cortafuegos_instalaciones_electricas_1.png');
     background-size: cover;
-    background-position:top 10px;
+    background-position: top 10px;
 }
 
 /* --- Sección 1: Protocolo de Pasos --- */
@@ -40,14 +40,13 @@
     text-align: center;
     border-top: 5px solid #00457c;
     border-bottom: 5px solid #00457c;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .paso:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .paso-icono {
@@ -106,11 +105,12 @@
     max-width: 800px;
     margin: 0 auto;
     border-left: 5px solid #6ab42f;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .lista-prevencion h3 {
-    color: #c82333; /* Rojo para la advertencia */
+    color: #c82333;
+    /* Rojo para la advertencia */
     font-size: 1.5rem;
     margin-bottom: 25px;
 }
@@ -134,7 +134,8 @@
 }
 
 .lista-prevencion ul li i {
-    color: #f0ad4e; /* Amarillo para el ícono de exclamación */
+    color: #f0ad4e;
+    /* Amarillo para el ícono de exclamación */
     margin-right: 15px;
     margin-top: 4px;
 }
@@ -164,4 +165,40 @@
     border: 1px solid #6ab42f;
     border-radius: 10px;
     padding: 30px;
+}
+
+/* --- Video de Prevención --- */
+.video-wrapper {
+    max-width: 800px;
+    margin: 50px auto 0 auto;
+}
+
+.video-wrapper h3 {
+    color: #00457c;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.video-wrapper h3 i {
+    margin-right: 10px;
+    color: #6ab42f;
+}
+
+.video-responsive-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.video-responsive-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
