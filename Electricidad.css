@@ -9,11 +9,9 @@
 
 /* --- Banner Específico --- */
 .banner-electricidad {
-    background-image: url('https://estructurales.es/wp-content/uploads/2024/05/mFEVRFUYG8.jpg');
+    background-image: url('https://cortafuegos.cl/wp-content/uploads/2020/07/cortafuegos_instalaciones_electricas_1.png');
     background-size: cover;
-    /* --- L    ÍNEA MODIFICADA --- */
-    /* Mueve la imagen verticalmente para un mejor encuadre */
-    background-position: center 50%;
+    background-position:top 10px;
 }
 
 /* --- Sección 1: Protocolo de Pasos --- */
