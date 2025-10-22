@@ -19,6 +19,8 @@ header {
   transition: all 0.3s ease;
 }
 
+/* ÍCONOS DE REDES */
+
 .social-icons {
   display: flex;
   gap: 15px;
@@ -46,6 +48,8 @@ header {
   transition: all 0.3s ease;
 }
 
+/* LOGO DEL LICEO */
+
 .logo {
   display: flex;
   align-items: center;
@@ -56,6 +60,8 @@ header {
   height: 90px;
   transition: all 0.3s ease;
 }
+
+/* MENÚ DE NAVEGACIÓN */
 
 .nav-menu {
   display: flex;
@@ -76,6 +82,8 @@ header {
   border-bottom: 2px solid #6ab42f;
 }
 
+/* BOTÓN DE ADMISIÓN */
+
 .btn-admision {
   background: #8bc34a;
   color: white !important;
@@ -87,6 +95,8 @@ header {
 .btn-admision:hover {
   background: #7cb342;
 }
+
+/* ESTILOS DE MENÚ DESPLEGABLE */
 
 .dropdown {
   position: relative;
@@ -159,6 +169,23 @@ header.shrink .btn-admision {
 }
 
 /* --- Sección 1: Protocolo de Pasos --- */
+
+.protocolo-pasos {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+/* TÍTULO DE SECCIÓN PASOS */
+
+.protocolo-pasos h2 {
+    text-align: center;
+    color: #00457c;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* SUBTÍTULO DE PASOS */
+
 .subtitulo-sismos {
     text-align: center;
     font-size: 1.2rem;
@@ -170,17 +197,7 @@ header.shrink .btn-admision {
     padding: -50px;
 }
 
-.protocolo-pasos {
-    padding: 80px 0;
-    background-color: #ffffff;
-}
-
-.protocolo-pasos h2 {
-    text-align: center;
-    color: #00457c;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-}
+/* COLOCAMIENTO DE PASOS EN PANTALLA */
 
 .pasos-grid {
     display: grid;
@@ -204,6 +221,8 @@ header.shrink .btn-admision {
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
+/* ESTILOS ÍCONO DE CADA PASO */
+
 .paso-icono {
     background-color: #00457c;
     color: white;
@@ -217,6 +236,8 @@ header.shrink .btn-admision {
     align-items: center;
     margin: 0 auto 20px auto;
 }
+
+/* TEXTO DE CADA PASO */
 
 .paso h3 {
     color: #00457c;
@@ -237,6 +258,8 @@ header.shrink .btn-admision {
     background-color: #ffffff;
 }
 
+/* TEXTO DE CONSEJOS */
+
 .Consejos h2 {
     text-align: center;
     color: #00457c;
@@ -249,11 +272,15 @@ header.shrink .btn-admision {
 
 }
 
+/* COLOCAMIENTO DE CADA CUADRO DE CONSEJOS */
+
 .consejos-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
+
+/* ESTILOS DE CADA CUADRO DE CONSEJOS */
 
 .consejos-card {
     background-color: rgba(255, 255, 255, 0.1);
@@ -276,12 +303,16 @@ header.shrink .btn-admision {
   background-color: #00457c;
 }
 
+/* TÍTULO DE SECCIÓN */
+
 .contenedor h2 {
   padding-top: 25px;
   font-size: 2rem;
   margin-bottom: 20px;
   color:white;
 }
+
+/* ESTILOS VIDEO */
 
 .video {
   display: flex;

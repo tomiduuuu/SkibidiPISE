@@ -19,6 +19,8 @@ header {
   transition: all 0.3s ease;
 }
 
+/* ÍCONOS DE REDES */
+
 .social-icons {
   display: flex;
   gap: 15px;
@@ -46,6 +48,8 @@ header {
   transition: all 0.3s ease;
 }
 
+/* LOGO DEL LICEO */
+
 .logo {
   display: flex;
   align-items: center;
@@ -56,6 +60,8 @@ header {
   height: 90px;
   transition: all 0.3s ease;
 }
+
+/* MENÚ DE NAVEGACIÓN */
 
 .nav-menu {
   display: flex;
@@ -76,6 +82,7 @@ header {
   border-bottom: 2px solid #6ab42f;
 }
 
+/* BOTÓN DE ADMISIÓN */
 .btn-admision {
   background: #8bc34a;
   color: white !important;
@@ -87,6 +94,8 @@ header {
 .btn-admision:hover {
   background: #7cb342;
 }
+
+/* ESTILOS DE MENÚ DESPLEGABLE */
 
 .dropdown {
   position: relative;
@@ -225,12 +234,16 @@ header.shrink .btn-admision {
     background-color: #f8f9fa;
 }
 
+/* TÍTULO DE PREVENCIÓN */
+
 .prevencion h2 {
     text-align: center;
     color: #00457c;
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
+
+/* SUBTÍTULO DE PREVENCIÓN */
 
 .subtitulo-prevencion {
     text-align: center;
@@ -241,6 +254,8 @@ header.shrink .btn-admision {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* LISTA DE PREVENCIÓN */
 
 .lista-prevencion {
     background-color: white;
@@ -296,6 +311,7 @@ header.shrink .btn-admision {
   color:white;
 }
 
+/* ESTILOS VIDEO */
 .video {
   display: flex;
   justify-content: center;
