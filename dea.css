@@ -35,6 +35,7 @@ header {
     transition: all 0.3s ease;
 }
 
+/* íconos header */
 .social-icons {
     display: flex;
     gap: 15px;
@@ -71,6 +72,8 @@ header {
     height: 90px;
     transition: all 0.3s ease;
 }
+
+/* MENÚ DE NAVEGACIÓN */
 
 .nav-menu {
     display: flex;
@@ -125,6 +128,8 @@ header {
 }
 
 /* --- 2. CONTENIDO "DEA" (ESCRITORIO) --- */
+
+/* IMAGEN DEL TITULO */
 .banner-pise {
     position: relative;
     display: flex;
@@ -149,6 +154,8 @@ header {
     font-size: 4em;
 }
 
+/* ESTILOS CURVA */
+
 .curva {
     position: absolute;
     bottom: -1px;
@@ -159,6 +166,8 @@ header {
     border-top-left-radius: 100% 80px;
     border-top-right-radius: 100% 80px;
 }
+
+/* ESTILOS SECCIÓN VIDEO Y DESCRIPCIÓN */
 
 .video-yt {
     padding: 5vh 20px;
@@ -189,6 +198,8 @@ header {
     max-width: 1200px;
 }
 
+/* ESTILOS VIDEO */
+
 .contenido-yt {
     width: 45%;
     text-align: center;
@@ -207,6 +218,8 @@ header {
     font-weight: 500;
 }
 
+/* ESTILOS DESCRIPCIÓN */
+
 .resumen-seccion {
     width: 45%;
     border: solid 1px rgb(177, 177, 177);
@@ -219,6 +232,8 @@ header {
     font-size: 1.2em;
     line-height: 1.6;
 }
+
+/* ESTILOS SECCIÓN SLIDER DE PASOS */
 
 .seccion-pasos {
     padding: 5em 20px;
@@ -246,6 +261,8 @@ header {
     transition: transform 0.6s ease-in-out;
 }
 
+/* ESTILOS DE CADA PASO */
+
 .paso {
     width: calc(100% / 9); /* 1 paso */
     height: 100%;
@@ -254,6 +271,8 @@ header {
     padding: 3em;
     gap: 30px;
 }
+
+/* COLUMNA DE IMAGEN DE CADA PASO */
 
 .columna-img, .columna-texto {
     width: 50%;
@@ -274,6 +293,8 @@ header {
     border-radius: 10px;
 }
 
+/* COLUMNA DE TEXTO DE CADA PASO*/
+
 .columna-texto h2 {
     font-size: 1.6em;
     color: #004080;
@@ -293,6 +314,8 @@ header {
     list-style: none;
     padding: 0;
 }
+
+/* BOTONES DE CADA PASO */
 
 .contenedor-botones {
     margin-top: 20px;
